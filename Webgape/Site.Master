@@ -1,0 +1,334 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Webgape.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="/style/css/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/style/css/media-queries.css" />
+    <link rel="shortcut icon" href="/style/images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/style/js/player/mediaelementplayer.css" />
+    <meta name="google-site-verification" content="DP9_7GLM5ITCAsWL-awR2gSlKLl0tb4eRixoFe2s_Dg" />
+    <link rel="stylesheet" type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,300italic,300,700,700italic|Open+Sans+Condensed:300,700' />
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="style/css/ie8.css" media="all">
+    <![endif]-->
+    <!--[if IE 9]>
+    <link rel="stylesheet" type="text/css" href="style/css/ie9.css" media="all">
+    <![endif]-->
+    <script src="/style/js/jquery-1.7.2.min.js"></script>
+    <script src="/style/js/jquery-alerts.js"></script>
+    <script src="/style/js/ddsmoothmenu.js"></script>
+    <script src="/style/js/selectnav.js"></script>
+    <script src="/style/js/jquery.masonry.min.js"></script>
+    <script src="/style/js/jquery.fitvids.js"></script>
+    <script src="/style/js/jquery.backstretch.min.js"></script>
+    <script src="/style/js/mediaelement.min.js"></script>
+    <script src="/style/js/mediaelementplayer.min.js"></script>
+    <script src="/style/js/jquery.dcflickr.1.0.js"></script>
+    <script src="/style/js/twitter.min.js"></script>
+    <script>$.backstretch("/style/images/bg/6.jpg");</script>
+
+    <%--Get Visitors Information--%>
+    <!-- Get geo information -->
+    <script type="text/javascript" src="http://geoiplookup.wikimedia.org/"></script>
+    <%--<script type="text/javascript" src="https://bits.wikimedia.org/geoiplookup"></script>--%>
+
+    <!-- JavaScript object-to-JSON -->
+    <!-- Don't actually hotlink this; host it yourself -->
+    <%--<script type="text/javascript" src="/style/js/json2.js"> </script>--%>
+    <%--    <script type="text/javascript" src="https://github.com/douglascrockford/JSON-js/blob/master/json2.js">
+    </script>
+    <script type="text/javascript">
+        function MyFunction() {
+            document.getElementById('<%# btngeo.ClientID %>').click();
+        }
+    </script>--%>
+    <%--Get Visitors Information--%>
+    <%--Scrool to top --%>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() == 0) {
+                    $('#divscropp').attr('style', "display:none;");
+                }
+                else {
+                    $('#divscropp').attr("style", "display:block;");
+                }
+            });
+        });
+    </script>
+    <style type="text/css">
+        .footer-arrow-icon {
+            bottom: -5px;
+            display: block;
+            float: right;
+            margin-right: 5px;
+            position: fixed;
+            right: -5px;
+            text-align: right;
+            width: 40px;
+        }
+
+        .footer-left-icon {
+            bottom: -20px;
+            /*display: block;*/
+            /*float: left;*/
+            margin-left: 5px;
+            position: fixed;
+            /*left: -5px;
+            text-align: left;
+            width: 40px;*/
+        }
+    </style>
+    <%--Scrool to top --%>
+
+    <%--For pop up page open--%>
+    <script type="text/javascript">
+        function ShowModelSearchContactus() {
+            if (document.getElementById("diviframecontactus") != null) { $('#diviframecontactus').html(''); }
+            var link = "/Loginpopup.aspx"
+            var iframe = document.createElement('iframe');
+            iframe.frameBorder = 0;
+            iframe.width = "1440px";
+            iframe.height = "296px";
+            iframe.id = "frmshare";
+            iframe.scrolling = "no";
+            iframe.frameborder = "0"
+            document.getElementById("diviframecontactus").appendChild(iframe);
+            document.getElementById("diviframecontactus").style.display = 'block';
+            document.getElementById("popupContactpricequote1").style.display = 'block';
+            document.getElementById("diviframesearch").style.display = 'none';
+            document.getElementById('popupContactpricequote1').removeAttribute("style");
+            document.getElementById('popupContactpricequote1').setAttribute("style", "z-index: 2000001; top: 0px; padding: 0px; width:300px; height:300px;display:block;background: none repeat scroll 0 0 rgba(3, 3, 3, 0.3) !important; padding: 10px !important;border:none !important;");
+            document.getElementById('popupContactpricequote1').style.width = '300px';
+            document.getElementById('popupContactpricequote1').style.height = '300px';
+            document.getElementById('frmshare').height = '300px';
+            document.getElementById('frmshare').width = '300px';
+            document.getElementById('frmshare').setAttribute("style", "background-color: #585858");
+            document.getElementById("frmshare").contentWindow.document.body.innerHTML = '';
+            document.getElementById("frmshare").src = "/Loginpopup.aspx";
+            window.scrollTo(0, 0);
+            centerPopupmaster();
+            loadPopupmaster();
+
+        }
+
+
+        function centerPopupmaster() {
+            var windowWidth = document.documentElement.clientWidth;
+            var windowHeight = document.documentElement.clientHeight;
+            var popupHeight1 = $("#popupContactpricequote1").height();
+            var popupWidth1 = $("#popupContactpricequote1").width();
+            $("#popupContactpricequote1").css({
+                "position": "fixed",
+                "top": windowHeight / 2 - popupHeight1 / 2 + 5,
+                "bottom": 5,
+                "left": windowWidth / 2 - popupWidth1 / 2
+            });
+        }
+
+        function disablePopupmaster() {
+            //alert(popupStatuspricequote);
+            //if (popupStatuspricequote == 1) {
+            $("#backgroundPopup").fadeOut("slow");
+            $("#popupContactpricequote1").fadeOut("slow");
+            //    popupStatuspricequote = 0;
+            //}
+        }
+
+    </script>
+
+    <%--For pop up page open--%>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body id="body" class="single single-post postid-463 single-format-gallery">
+    <form id="frmmaster" runat="server" defaultbutton="btnTemp">
+        <div class="scanlines"></div>
+        <div class="header-wrapper opacity">
+            <div class="header">
+                <div class="logo">
+                    <a href="/">
+                        <img src="/style/images/logo.png" alt="" />
+                    </a>
+                </div>
+                <div id="menu-wrapper">
+                    <div id="menu" class="menu">
+                        <ul id="tiny">
+                            <li id="lihome" runat="server" class="active"><a href="/">Home</a>
+                            </li>
+                            <li id="licategory" runat="server"><a href="#">Category</a>
+                                <ul>
+                                    <asp:Literal ID="ltrcategory" runat="server"></asp:Literal>
+                                </ul>
+                            </li>
+                            <li id="lidashbord" runat="server">
+                                <a href="/Admin/Dashboard.aspx">Dashboard</a>
+                            </li>
+                            <li id="licontact" runat="server">
+                                <a href="/Contact.aspx">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <div class="footer-wrapper">
+            <div id="footer" class="four">
+                <div id="second" class="widget-area">
+                    <div id="twitter-2" class="widget widget_twitter">
+                        <h3 class="widget-title">Share Us</h3>
+                        <div id="twitter-wrapper">
+                            <div id="twitter"></div>
+                            <ul>
+                                <li>
+                                    <div id="fb-root"></div>
+                                    <script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+                                    <div class="fb-like" data-href="<%=FacebookLink%>" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+                                </li>
+                                <li>
+                                    <script src="https://apis.google.com/js/platform.js"></script>
+                                    <div class="g-ytsubscribe" data-channelid="<%=strChannelId%>" data-layout="default"></div>
+                                </li>
+                                <li>
+                                    <a href="<%=TwitterLink%>" class="twitter-follow-button" data-show-count="false">Follow @BeIndian</a>
+                                    <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>
+                                </li>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div id="third" class="widget-area" style="width: 40%">
+                    <div id="example-widget-3" class="widget example">
+                        <h3 class="widget-title">Popular Posts</h3>
+                        <ul class="post-list">
+                            <asp:Literal ID="ltrpopularpost" runat="server"></asp:Literal>
+                        </ul>
+                    </div>
+                </div>
+                <div id="fourth" class="widget-area">
+                    <div class="widget">
+                        <h3 class="widget-title">Visitor Information</h3>
+                        <ul>
+                            <%--<a href="/Default.aspx">--%>
+                            <%--<li><b>Loading...</b>
+                                <asp:Label ID="lblvisitors" runat="server"></asp:Label></li>--%>
+                            <li>
+                                <!-- BEGIN: Powered by Supercounters.com -->
+                                <%--<center>--%>
+                                <script type="text/javascript" src="http://widget.supercounters.com/hit.js"></script>
+                                <script type="text/javascript">sc_hit(1359438, 0, 7);</script>
+                                <br>
+                                <noscript><a href="http://www.supercounters.com">Tumblr Hit Counter</a></noscript>
+                                <%--</center>--%>
+                                <!-- END: Powered by Supercounters.com -->
+
+                            </li>
+                            <%--</a>--%>
+                        </ul>
+                        <%--BindVisitor method hideen--%>
+                        <%--<ul>
+                            <a href="/Visitor.aspx">
+                                <li><b>Total Visitor</b> :
+                                <asp:Label ID="lblvisitors" runat="server"></asp:Label></li>
+                            </a>
+                            <a href="/Visitor.aspx">
+                                <li><b>Page Views</b> :
+                                <asp:Label ID="lblpageviews" runat="server"></asp:Label></li>
+                            </a>
+                            <a href="/Visitor.aspx">
+                                <li><b>Unique Visitor</b> :
+                                <asp:Label ID="lblUniqueVisitor" runat="server"></asp:Label></li>
+                            </a>
+                            <br />
+                            <li><b>Your Ip</b> : <%=IP%></li>
+                            <li><b>From</b> : <%=city%>, <%=country%></li>
+                            <li><b>Browser</b> : <%=Browser %> (<%=Version%>)</li>
+
+                        </ul>--%>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-arrow-icon" style="display: none;" id="divscropp">
+            <a onclick="$('html, body').animate({ scrollTop: $('#body').offset().top }, 'slow'); ">
+                <img border="0" src="/Images/totop.png" />
+            </a>
+        </div>
+        <% if (!IsApp)
+            {%>
+        <div class="footer-left-icon">
+            <a href="/Contact.aspx" target="_blank" class="button " style="opacity: 1;">Share Us</a>
+        </div>
+        <%}%>
+        <div class="site-generator-wrapper">
+            <div class="site-generator">
+                <p>Copyright <a href="http://BeIndian.in" target="_blank">BeIndian.in</a> 2008-2017. All rights reserved <a href="http://puravam.com" target="_blank">puravam.com</a></p>
+            </div>
+        </div>
+        <div style="display: none">
+            <asp:Button ID="btnTemp" runat="server" OnClientClick="return false;" />
+            <asp:Button ID="btngeo" runat="server" OnClick="btngeo_Click" />
+        </div>
+
+        <div id="popupContactpricequote1" style="z-index: 1000001; display: none; top: 30px; padding: 0px; width: 1440px; background: #fff;">
+            <div style='float: left; background-color: transparent; left: -15px; top: -18px; position: absolute;'>
+                <a href="javascript:void(0);" onclick="disablePopupmaster();" title="">
+                    <img src="/images/popupclose.png" alt="" />
+                </a>
+            </div>
+            <div style="background: none repeat scroll 0 0 white; width: 100%">
+                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                    <tr>
+                        <td align="left">
+                            <div id="diviframesearch" style="display: none;">
+                            </div>
+                            <div id="diviframecontactus" style="display: none"></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <script src="/style/js/scripts.js"></script>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', '<%=strGoogle%>', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+
+        <%--  <!-- Hidden field to hold result -->
+        <asp:HiddenField ID="hdnGeo" runat="server"></asp:HiddenField>
+        <!-- Script to populate field -->
+        <script type="text/javascript">
+            document.getElementById('<%= hdnGeo.ClientID %>').value = JSON.stringify(Geo);
+        </script>--%>
+    </form>
+</body>
+</html>

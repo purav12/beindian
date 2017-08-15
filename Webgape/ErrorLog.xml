@@ -1,0 +1,1237 @@
+<?xml version="1.0"?>
+<Root>
+  <ErrorLogInfo>
+    <DateTime>4/23/2017 10:48:18 AM, IST - 4/23/2017 10:48:18 AM</DateTime>
+    <Page>http://localhost:3752/post.aspx?PID=1522</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Length cannot be less than zero.
+Parameter name: length</Error>
+    <StackTrace>   at System.String.Substring(Int32 startIndex, Int32 length)
+   at Webgape.Site.SetDescription(String Description) in D:\My Projects\Webgape\Webgape\Webgape\Site.Master.cs:line 469
+   at Webgape.Site.BindPopularPost() in D:\My Projects\Webgape\Webgape\Webgape\Site.Master.cs:line 305
+   at Webgape.Site.Page_Load(Object sender, EventArgs e) in D:\My Projects\Webgape\Webgape\Webgape\Site.Master.cs:line 62
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>4/23/2017 10:48:20 AM, IST - 4/23/2017 10:48:20 AM</DateTime>
+    <Page>http://localhost:3752/default.aspx</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Length cannot be less than zero.
+Parameter name: length</Error>
+    <StackTrace>   at System.String.Substring(Int32 startIndex, Int32 length)
+   at Webgape.Site.SetDescription(String Description) in D:\My Projects\Webgape\Webgape\Webgape\Site.Master.cs:line 469
+   at Webgape.Site.BindPopularPost() in D:\My Projects\Webgape\Webgape\Webgape\Site.Master.cs:line 305
+   at Webgape.Site.Page_Load(Object sender, EventArgs e) in D:\My Projects\Webgape\Webgape\Webgape\Site.Master.cs:line 62
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>4/28/2017 12:37:43 AM, IST - 4/28/2017 12:37:43 AM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Arithmetic overflow error converting expression to data type int.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean&amp; moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean&amp; more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at WebgapeClass.SQLAccess.GetDs(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 223Query-usp_Page_GetPageByPageId-OrgQuery ,Parameter@PageId -values72,Parameter@opt -values1</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>4/28/2017 12:38:37 AM, IST - 4/28/2017 12:38:37 AM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Arithmetic overflow error converting expression to data type int.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean&amp; moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean&amp; more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at WebgapeClass.SQLAccess.GetDs(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 223Query-usp_Page_GetPageByPageId-OrgQuery ,Parameter@PageId -values72,Parameter@opt -values1</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>4/28/2017 12:39:13 AM, IST - 4/28/2017 12:39:13 AM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Arithmetic overflow error converting expression to data type int.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean&amp; moreRows)
+   at System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean&amp; more)
+   at System.Data.SqlClient.SqlDataReader.Read()
+   at System.Data.Common.DataAdapter.FillLoadDataRow(SchemaMapping mapping)
+   at System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   at System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at WebgapeClass.SQLAccess.GetDs(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 223Query-usp_Page_GetPageByPageId-OrgQuery ,Parameter@PageId -values72,Parameter@opt -values1</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>4/28/2017 8:36:09 AM, IST - 4/28/2017 8:36:09 AM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at WebgapeClass.SQLAccess.GetDs(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 218Query-usp_Topic-OrgQuery ,Parameter@TopicName -values__browserlink/requestdata/6c9681efb02d4ef4b140e87e8a3f3b0f,Parameter@Mode -values1</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>4/30/2017 9:59:59 AM, IST - 4/30/2017 9:59:59 AM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Incorrect syntax near ')'.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   at System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   at WebgapeClass.SQLAccess.GetDs(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 223Query-usp_Post_GetIndexPagePost-OrgQuery ,Parameter@PostAdminIds -values30,Parameter@rowcount -values25,Parameter@nextcount -values36,Parameter@PostIDs -values1561,1565,1563,1562,1564,1549,1526,1535,1532,1525,1542,1519,,Parameter@opt -values14</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>4/30/2017 1:09:15 PM, IST - 4/30/2017 1:09:15 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at WebgapeClass.SQLAccess.GetDs(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 218Query-usp_Category_GetCategory-OrgQuery ,Parameter@opt -values3</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>4/30/2017 1:09:22 PM, IST - 4/30/2017 1:09:22 PM</DateTime>
+    <Page>http://localhost:3752/Default.aspx</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Object reference not set to an instance of an object.</Error>
+    <StackTrace>   at Webgape.Default.FillCategoryDropDown() in D:\My Projects\Webgape\Webgape\Webgape\Default.aspx.cs:line 56
+   at Webgape.Default.Page_Load(Object sender, EventArgs e) in D:\My Projects\Webgape\Webgape\Webgape\Default.aspx.cs:line 29
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>4/30/2017 7:06:30 PM, IST - 4/30/2017 7:06:30 PM</DateTime>
+    <Page>http://localhost:3752/Utility.aspx</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Index and length must refer to a location within the string.
+Parameter name: length</Error>
+    <StackTrace>   at System.String.Substring(Int32 startIndex, Int32 length)
+   at Webgape.Utility.AddImagesViaYoutube() in D:\My Projects\Webgape\Webgape\Webgape\Utility.aspx.cs:line 48
+   at Webgape.Utility.Page_Load(Object sender, EventArgs e) in D:\My Projects\Webgape\Webgape\Webgape\Utility.aspx.cs:line 35
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>4/30/2017 7:08:45 PM, IST - 4/30/2017 7:08:45 PM</DateTime>
+    <Page>http://localhost:3752/Utility.aspx</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Could not find file 'C:\Program Files (x86)\IIS Express\10_1571.jpg'.</Error>
+    <StackTrace>   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.Net.FileWebStream..ctor(FileWebRequest request, String path, FileMode mode, FileAccess access, FileShare sharing, Int32 length, Boolean async)
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean asyncHint)</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>4/30/2017 7:11:58 PM, IST - 4/30/2017 7:11:58 PM</DateTime>
+    <Page>http://localhost:3752/Utility.aspx</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Could not find file 'C:\Program Files (x86)\IIS Express\10_1571.jpg'.</Error>
+    <StackTrace>   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   at System.Net.FileWebStream..ctor(FileWebRequest request, String path, FileMode mode, FileAccess access, FileShare sharing, Int32 length, Boolean async)
+   at System.Net.FileWebResponse..ctor(FileWebRequest request, Uri uri, FileAccess access, Boolean asyncHint)</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>4/30/2017 7:20:31 PM, IST - 4/30/2017 7:20:31 PM</DateTime>
+    <Page>Post.aspx</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Parameter is not valid.</Error>
+    <StackTrace>   at System.Drawing.Bitmap..ctor(Int32 width, Int32 height, PixelFormat format)
+   at Webgape.Utility.ResizeImage(String strFile, Int32 FinWidth, Int32 FinHeight, String strFilePath) in D:\My Projects\Webgape\Webgape\Webgape\Utility.aspx.cs:line 320
+   at Webgape.Utility.ResizePhoto(String strFile, String Size, String strFilePath) in D:\My Projects\Webgape\Webgape\Webgape\Utility.aspx.cs:line 274
+   at Webgape.Utility.CreateImage(String Size, String FileName) in D:\My Projects\Webgape\Webgape\Webgape\Utility.aspx.cs:line 207</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>4/30/2017 7:20:31 PM, IST - 4/30/2017 7:20:31 PM</DateTime>
+    <Page>Post.aspx</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Parameter is not valid.</Error>
+    <StackTrace>   at System.Drawing.Bitmap..ctor(Int32 width, Int32 height, PixelFormat format)
+   at Webgape.Utility.ResizeImage(String strFile, Int32 FinWidth, Int32 FinHeight, String strFilePath) in D:\My Projects\Webgape\Webgape\Webgape\Utility.aspx.cs:line 320
+   at Webgape.Utility.ResizePhoto(String strFile, String Size, String strFilePath) in D:\My Projects\Webgape\Webgape\Webgape\Utility.aspx.cs:line 274
+   at Webgape.Utility.CreateImage(String Size, String FileName) in D:\My Projects\Webgape\Webgape\Webgape\Utility.aspx.cs:line 207</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>4/30/2017 7:20:31 PM, IST - 4/30/2017 7:20:31 PM</DateTime>
+    <Page>Post.aspx</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Parameter is not valid.</Error>
+    <StackTrace>   at System.Drawing.Bitmap..ctor(Int32 width, Int32 height, PixelFormat format)
+   at Webgape.Utility.ResizeImage(String strFile, Int32 FinWidth, Int32 FinHeight, String strFilePath) in D:\My Projects\Webgape\Webgape\Webgape\Utility.aspx.cs:line 320
+   at Webgape.Utility.ResizePhoto(String strFile, String Size, String strFilePath) in D:\My Projects\Webgape\Webgape\Webgape\Utility.aspx.cs:line 274
+   at Webgape.Utility.CreateImage(String Size, String FileName) in D:\My Projects\Webgape\Webgape\Webgape\Utility.aspx.cs:line 207</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>4/30/2017 7:22:05 PM, IST - 4/30/2017 7:22:05 PM</DateTime>
+    <Page>Post.aspx</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Parameter is not valid.</Error>
+    <StackTrace>   at System.Drawing.Bitmap..ctor(Int32 width, Int32 height, PixelFormat format)
+   at Webgape.Utility.ResizeImage(String strFile, Int32 FinWidth, Int32 FinHeight, String strFilePath) in D:\My Projects\Webgape\Webgape\Webgape\Utility.aspx.cs:line 320
+   at Webgape.Utility.ResizePhoto(String strFile, String Size, String strFilePath) in D:\My Projects\Webgape\Webgape\Webgape\Utility.aspx.cs:line 274
+   at Webgape.Utility.CreateImage(String Size, String FileName) in D:\My Projects\Webgape\Webgape\Webgape\Utility.aspx.cs:line 207</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>4/30/2017 7:23:09 PM, IST - 4/30/2017 7:23:09 PM</DateTime>
+    <Page>Post.aspx</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Parameter is not valid.</Error>
+    <StackTrace>   at System.Drawing.Bitmap..ctor(Int32 width, Int32 height, PixelFormat format)
+   at Webgape.Utility.ResizeImage(String strFile, Int32 FinWidth, Int32 FinHeight, String strFilePath) in D:\My Projects\Webgape\Webgape\Webgape\Utility.aspx.cs:line 320
+   at Webgape.Utility.ResizePhoto(String strFile, String Size, String strFilePath) in D:\My Projects\Webgape\Webgape\Webgape\Utility.aspx.cs:line 274
+   at Webgape.Utility.CreateImage(String Size, String FileName) in D:\My Projects\Webgape\Webgape\Webgape\Utility.aspx.cs:line 207</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>4/30/2017 7:23:41 PM, IST - 4/30/2017 7:23:41 PM</DateTime>
+    <Page>Post.aspx</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Parameter is not valid.</Error>
+    <StackTrace>   at System.Drawing.Bitmap..ctor(Int32 width, Int32 height, PixelFormat format)
+   at Webgape.Utility.ResizeImage(String strFile, Int32 FinWidth, Int32 FinHeight, String strFilePath) in D:\My Projects\Webgape\Webgape\Webgape\Utility.aspx.cs:line 320
+   at Webgape.Utility.ResizePhoto(String strFile, String Size, String strFilePath) in D:\My Projects\Webgape\Webgape\Webgape\Utility.aspx.cs:line 274
+   at Webgape.Utility.CreateImage(String Size, String FileName) in D:\My Projects\Webgape\Webgape\Webgape\Utility.aspx.cs:line 207</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>4/30/2017 7:23:41 PM, IST - 4/30/2017 7:23:41 PM</DateTime>
+    <Page>Post.aspx</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Parameter is not valid.</Error>
+    <StackTrace>   at System.Drawing.Bitmap..ctor(Int32 width, Int32 height, PixelFormat format)
+   at Webgape.Utility.ResizeImage(String strFile, Int32 FinWidth, Int32 FinHeight, String strFilePath) in D:\My Projects\Webgape\Webgape\Webgape\Utility.aspx.cs:line 320
+   at Webgape.Utility.ResizePhoto(String strFile, String Size, String strFilePath) in D:\My Projects\Webgape\Webgape\Webgape\Utility.aspx.cs:line 274
+   at Webgape.Utility.CreateImage(String Size, String FileName) in D:\My Projects\Webgape\Webgape\Webgape\Utility.aspx.cs:line 207</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>6/9/2017 10:05:39 PM, IST - 6/9/2017 10:05:39 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal&amp; connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at WebgapeClass.SQLAccess.GetDs(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 218Query-usp_Topic-OrgQuery ,Parameter@TopicName -valuesstyle/css/style,Parameter@Mode -values1</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:31:44 PM, IST - 7/2/2017 1:31:44 PM</DateTime>
+    <Page>http://localhost:3752/Admin/Settings/Pagerights.aspx</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Object cannot be cast from DBNull to other types.</Error>
+    <StackTrace>   at System.DBNull.System.IConvertible.ToBoolean(IFormatProvider provider)
+   at System.Convert.ToBoolean(Object value)
+   at ASP.admin_settings_pagerights_aspx.__DataBinding__control28(Object sender, EventArgs e) in d:\My Projects\Webgape\Webgape\Webgape\Admin\Settings\PageRights.aspx:line 144
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at System.Web.UI.WebControls.GridView.DataBind()
+   at Webgape.ADMIN.Settings.PageRights.GetPageRightList() in D:\My Projects\Webgape\Webgape\Webgape\Admin\Settings\PageRights.aspx.cs:line 69
+   at Webgape.ADMIN.Settings.PageRights.Page_Load(Object sender, EventArgs e) in D:\My Projects\Webgape\Webgape\Webgape\Admin\Settings\PageRights.aspx.cs:line 29
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:32:26 PM, IST - 7/2/2017 1:32:26 PM</DateTime>
+    <Page>http://localhost:3752/Admin/Settings/Pagerights.aspx</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Object cannot be cast from DBNull to other types.</Error>
+    <StackTrace>   at System.DBNull.System.IConvertible.ToBoolean(IFormatProvider provider)
+   at System.Convert.ToBoolean(Object value)
+   at ASP.admin_settings_pagerights_aspx.__DataBinding__control28(Object sender, EventArgs e) in d:\My Projects\Webgape\Webgape\Webgape\Admin\Settings\PageRights.aspx:line 144
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at System.Web.UI.WebControls.GridView.DataBind()
+   at Webgape.ADMIN.Settings.PageRights.GetPageRightList() in D:\My Projects\Webgape\Webgape\Webgape\Admin\Settings\PageRights.aspx.cs:line 69
+   at Webgape.ADMIN.Settings.PageRights.Page_Load(Object sender, EventArgs e) in D:\My Projects\Webgape\Webgape\Webgape\Admin\Settings\PageRights.aspx.cs:line 29
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:33:43 PM, IST - 7/2/2017 1:33:43 PM</DateTime>
+    <Page>http://localhost:3752/Admin/Settings/Pagerights.aspx</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'ISPOPULAR'.</Error>
+    <StackTrace>   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at System.Web.UI.DataBinder.Eval(Object container, String expression)
+   at System.Web.UI.TemplateControl.Eval(String expression)
+   at ASP.admin_settings_pagerights_aspx.__DataBinding__control28(Object sender, EventArgs e) in d:\My Projects\Webgape\Webgape\Webgape\Admin\Settings\PageRights.aspx:line 141
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at System.Web.UI.WebControls.GridView.DataBind()
+   at Webgape.ADMIN.Settings.PageRights.GetPageRightList() in D:\My Projects\Webgape\Webgape\Webgape\Admin\Settings\PageRights.aspx.cs:line 69
+   at Webgape.ADMIN.Settings.PageRights.Page_Load(Object sender, EventArgs e) in D:\My Projects\Webgape\Webgape\Webgape\Admin\Settings\PageRights.aspx.cs:line 29
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:34:30 PM, IST - 7/2/2017 1:34:30 PM</DateTime>
+    <Page>http://localhost:3752/Admin/Settings/Pagerights.aspx</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'ISPOPULAR'.</Error>
+    <StackTrace>   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at System.Web.UI.DataBinder.Eval(Object container, String expression)
+   at System.Web.UI.TemplateControl.Eval(String expression)
+   at ASP.admin_settings_pagerights_aspx.__DataBinding__control28(Object sender, EventArgs e) in d:\My Projects\Webgape\Webgape\Webgape\Admin\Settings\PageRights.aspx:line 141
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at System.Web.UI.WebControls.GridView.DataBind()
+   at Webgape.ADMIN.Settings.PageRights.GetPageRightList() in D:\My Projects\Webgape\Webgape\Webgape\Admin\Settings\PageRights.aspx.cs:line 69
+   at Webgape.ADMIN.Settings.PageRights.Page_Load(Object sender, EventArgs e) in D:\My Projects\Webgape\Webgape\Webgape\Admin\Settings\PageRights.aspx.cs:line 29
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:35:43 PM, IST - 7/2/2017 1:35:43 PM</DateTime>
+    <Page>http://localhost:3752/Admin/Settings/Pagerights.aspx</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>DataBinding: 'System.Data.DataRowView' does not contain a property with the name 'ISPOPULAR'.</Error>
+    <StackTrace>   at System.Web.UI.DataBinder.GetPropertyValue(Object container, String propName)
+   at System.Web.UI.DataBinder.Eval(Object container, String[] expressionParts)
+   at System.Web.UI.DataBinder.Eval(Object container, String expression)
+   at System.Web.UI.TemplateControl.Eval(String expression)
+   at ASP.admin_settings_pagerights_aspx.__DataBinding__control28(Object sender, EventArgs e) in d:\My Projects\Webgape\Webgape\Webgape\Admin\Settings\PageRights.aspx:line 141
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.Control.DataBindChildren()
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at System.Web.UI.WebControls.GridView.CreateRow(Int32 rowIndex, Int32 dataSourceIndex, DataControlRowType rowType, DataControlRowState rowState, Boolean dataBind, Object dataItem, DataControlField[] fields, TableRowCollection rows, PagedDataSource pagedDataSource)
+   at System.Web.UI.WebControls.GridView.CreateChildControls(IEnumerable dataSource, Boolean dataBinding)
+   at System.Web.UI.WebControls.CompositeDataBoundControl.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.GridView.PerformDataBinding(IEnumerable data)
+   at System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewSelectCallback(IEnumerable data)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at System.Web.UI.WebControls.DataBoundControl.PerformSelect()
+   at System.Web.UI.WebControls.BaseDataBoundControl.DataBind()
+   at System.Web.UI.WebControls.GridView.DataBind()
+   at Webgape.ADMIN.Settings.PageRights.GetPageRightList() in D:\My Projects\Webgape\Webgape\Webgape\Admin\Settings\PageRights.aspx.cs:line 69
+   at Webgape.ADMIN.Settings.PageRights.Page_Load(Object sender, EventArgs e) in D:\My Projects\Webgape\Webgape\Webgape\Admin\Settings\PageRights.aspx.cs:line 29
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)</StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:43:59 PM, IST - 7/2/2017 1:43:59 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Incorrect syntax near ','.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR =  , ISINDEXTOP = , ISPAGEINDEXTOP = , ISCATEGORYINDEXTOP =  where POSTID =  </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:43:59 PM, IST - 7/2/2017 1:43:59 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Incorrect syntax near ','.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR =  , ISINDEXTOP = , ISPAGEINDEXTOP = , ISCATEGORYINDEXTOP =  where POSTID =  </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:44:00 PM, IST - 7/2/2017 1:44:00 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Incorrect syntax near ','.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR =  , ISINDEXTOP = , ISPAGEINDEXTOP = , ISCATEGORYINDEXTOP =  where POSTID =  </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:44:00 PM, IST - 7/2/2017 1:44:00 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Incorrect syntax near ','.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR =  , ISINDEXTOP = , ISPAGEINDEXTOP = , ISCATEGORYINDEXTOP =  where POSTID =  </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:44:00 PM, IST - 7/2/2017 1:44:00 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Incorrect syntax near ','.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR =  , ISINDEXTOP = , ISPAGEINDEXTOP = , ISCATEGORYINDEXTOP =  where POSTID =  </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:44:00 PM, IST - 7/2/2017 1:44:00 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Incorrect syntax near ','.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR =  , ISINDEXTOP = , ISPAGEINDEXTOP = , ISCATEGORYINDEXTOP =  where POSTID =  </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:44:00 PM, IST - 7/2/2017 1:44:00 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Incorrect syntax near ','.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR =  , ISINDEXTOP = , ISPAGEINDEXTOP = , ISCATEGORYINDEXTOP =  where POSTID =  </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:44:01 PM, IST - 7/2/2017 1:44:01 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Incorrect syntax near ','.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR =  , ISINDEXTOP = , ISPAGEINDEXTOP = , ISCATEGORYINDEXTOP =  where POSTID =  </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:44:01 PM, IST - 7/2/2017 1:44:01 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Incorrect syntax near ','.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR =  , ISINDEXTOP = , ISPAGEINDEXTOP = , ISCATEGORYINDEXTOP =  where POSTID =  </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:44:01 PM, IST - 7/2/2017 1:44:01 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Incorrect syntax near ','.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR =  , ISINDEXTOP = , ISPAGEINDEXTOP = , ISCATEGORYINDEXTOP =  where POSTID =  </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:44:01 PM, IST - 7/2/2017 1:44:01 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Incorrect syntax near ','.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR =  , ISINDEXTOP = , ISPAGEINDEXTOP = , ISCATEGORYINDEXTOP =  where POSTID =  </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:45:24 PM, IST - 7/2/2017 1:45:24 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>The multi-part identifier "System.Web.UI.WebControls.Label" could not be bound.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = System.Web.UI.WebControls.CheckBox , ISINDEXTOP = System.Web.UI.WebControls.CheckBox, ISPAGEINDEXTOP = System.Web.UI.WebControls.CheckBox, ISCATEGORYINDEXTOP = System.Web.UI.WebControls.CheckBox where POSTID = System.Web.UI.WebControls.Label </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:45:24 PM, IST - 7/2/2017 1:45:24 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>The multi-part identifier "System.Web.UI.WebControls.Label" could not be bound.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = System.Web.UI.WebControls.CheckBox , ISINDEXTOP = System.Web.UI.WebControls.CheckBox, ISPAGEINDEXTOP = System.Web.UI.WebControls.CheckBox, ISCATEGORYINDEXTOP = System.Web.UI.WebControls.CheckBox where POSTID = System.Web.UI.WebControls.Label </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:45:24 PM, IST - 7/2/2017 1:45:24 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>The multi-part identifier "System.Web.UI.WebControls.Label" could not be bound.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = System.Web.UI.WebControls.CheckBox , ISINDEXTOP = System.Web.UI.WebControls.CheckBox, ISPAGEINDEXTOP = System.Web.UI.WebControls.CheckBox, ISCATEGORYINDEXTOP = System.Web.UI.WebControls.CheckBox where POSTID = System.Web.UI.WebControls.Label </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:45:24 PM, IST - 7/2/2017 1:45:24 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>The multi-part identifier "System.Web.UI.WebControls.Label" could not be bound.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = System.Web.UI.WebControls.CheckBox , ISINDEXTOP = System.Web.UI.WebControls.CheckBox, ISPAGEINDEXTOP = System.Web.UI.WebControls.CheckBox, ISCATEGORYINDEXTOP = System.Web.UI.WebControls.CheckBox where POSTID = System.Web.UI.WebControls.Label </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:45:24 PM, IST - 7/2/2017 1:45:24 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>The multi-part identifier "System.Web.UI.WebControls.Label" could not be bound.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = System.Web.UI.WebControls.CheckBox , ISINDEXTOP = System.Web.UI.WebControls.CheckBox, ISPAGEINDEXTOP = System.Web.UI.WebControls.CheckBox, ISCATEGORYINDEXTOP = System.Web.UI.WebControls.CheckBox where POSTID = System.Web.UI.WebControls.Label </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:45:25 PM, IST - 7/2/2017 1:45:25 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>The multi-part identifier "System.Web.UI.WebControls.Label" could not be bound.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = System.Web.UI.WebControls.CheckBox , ISINDEXTOP = System.Web.UI.WebControls.CheckBox, ISPAGEINDEXTOP = System.Web.UI.WebControls.CheckBox, ISCATEGORYINDEXTOP = System.Web.UI.WebControls.CheckBox where POSTID = System.Web.UI.WebControls.Label </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:45:25 PM, IST - 7/2/2017 1:45:25 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>The multi-part identifier "System.Web.UI.WebControls.Label" could not be bound.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = System.Web.UI.WebControls.CheckBox , ISINDEXTOP = System.Web.UI.WebControls.CheckBox, ISPAGEINDEXTOP = System.Web.UI.WebControls.CheckBox, ISCATEGORYINDEXTOP = System.Web.UI.WebControls.CheckBox where POSTID = System.Web.UI.WebControls.Label </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:45:25 PM, IST - 7/2/2017 1:45:25 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>The multi-part identifier "System.Web.UI.WebControls.Label" could not be bound.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = System.Web.UI.WebControls.CheckBox , ISINDEXTOP = System.Web.UI.WebControls.CheckBox, ISPAGEINDEXTOP = System.Web.UI.WebControls.CheckBox, ISCATEGORYINDEXTOP = System.Web.UI.WebControls.CheckBox where POSTID = System.Web.UI.WebControls.Label </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:45:25 PM, IST - 7/2/2017 1:45:25 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>The multi-part identifier "System.Web.UI.WebControls.Label" could not be bound.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = System.Web.UI.WebControls.CheckBox , ISINDEXTOP = System.Web.UI.WebControls.CheckBox, ISPAGEINDEXTOP = System.Web.UI.WebControls.CheckBox, ISCATEGORYINDEXTOP = System.Web.UI.WebControls.CheckBox where POSTID = System.Web.UI.WebControls.Label </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:45:25 PM, IST - 7/2/2017 1:45:25 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>The multi-part identifier "System.Web.UI.WebControls.Label" could not be bound.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = System.Web.UI.WebControls.CheckBox , ISINDEXTOP = System.Web.UI.WebControls.CheckBox, ISPAGEINDEXTOP = System.Web.UI.WebControls.CheckBox, ISCATEGORYINDEXTOP = System.Web.UI.WebControls.CheckBox where POSTID = System.Web.UI.WebControls.Label </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:45:25 PM, IST - 7/2/2017 1:45:25 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>The multi-part identifier "System.Web.UI.WebControls.Label" could not be bound.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = System.Web.UI.WebControls.CheckBox , ISINDEXTOP = System.Web.UI.WebControls.CheckBox, ISPAGEINDEXTOP = System.Web.UI.WebControls.CheckBox, ISCATEGORYINDEXTOP = System.Web.UI.WebControls.CheckBox where POSTID = System.Web.UI.WebControls.Label </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:46:22 PM, IST - 7/2/2017 1:46:22 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Invalid column name 'True'.
+Invalid column name 'True'.
+Invalid column name 'False'.
+Invalid column name 'False'.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = True , ISINDEXTOP = True, ISPAGEINDEXTOP = False, ISCATEGORYINDEXTOP = False where POSTID = 1587 </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:46:22 PM, IST - 7/2/2017 1:46:22 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Invalid column name 'False'.
+Invalid column name 'True'.
+Invalid column name 'False'.
+Invalid column name 'False'.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = False , ISINDEXTOP = True, ISPAGEINDEXTOP = False, ISCATEGORYINDEXTOP = False where POSTID = 1586 </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:46:22 PM, IST - 7/2/2017 1:46:22 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Invalid column name 'True'.
+Invalid column name 'True'.
+Invalid column name 'False'.
+Invalid column name 'False'.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = True , ISINDEXTOP = True, ISPAGEINDEXTOP = False, ISCATEGORYINDEXTOP = False where POSTID = 1585 </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:46:22 PM, IST - 7/2/2017 1:46:22 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Invalid column name 'True'.
+Invalid column name 'True'.
+Invalid column name 'False'.
+Invalid column name 'False'.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = True , ISINDEXTOP = True, ISPAGEINDEXTOP = False, ISCATEGORYINDEXTOP = False where POSTID = 1584 </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:46:23 PM, IST - 7/2/2017 1:46:23 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Invalid column name 'True'.
+Invalid column name 'True'.
+Invalid column name 'True'.
+Invalid column name 'True'.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = True , ISINDEXTOP = True, ISPAGEINDEXTOP = True, ISCATEGORYINDEXTOP = True where POSTID = 1583 </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:46:23 PM, IST - 7/2/2017 1:46:23 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Invalid column name 'False'.
+Invalid column name 'False'.
+Invalid column name 'False'.
+Invalid column name 'False'.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = False , ISINDEXTOP = False, ISPAGEINDEXTOP = False, ISCATEGORYINDEXTOP = False where POSTID = 1582 </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:46:23 PM, IST - 7/2/2017 1:46:23 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Invalid column name 'False'.
+Invalid column name 'False'.
+Invalid column name 'False'.
+Invalid column name 'False'.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = False , ISINDEXTOP = False, ISPAGEINDEXTOP = False, ISCATEGORYINDEXTOP = False where POSTID = 1581 </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:46:23 PM, IST - 7/2/2017 1:46:23 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Invalid column name 'False'.
+Invalid column name 'False'.
+Invalid column name 'False'.
+Invalid column name 'False'.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = False , ISINDEXTOP = False, ISPAGEINDEXTOP = False, ISCATEGORYINDEXTOP = False where POSTID = 1580 </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:46:23 PM, IST - 7/2/2017 1:46:23 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Invalid column name 'False'.
+Invalid column name 'False'.
+Invalid column name 'False'.
+Invalid column name 'False'.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = False , ISINDEXTOP = False, ISPAGEINDEXTOP = False, ISCATEGORYINDEXTOP = False where POSTID = 1579 </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:46:23 PM, IST - 7/2/2017 1:46:23 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Invalid column name 'False'.
+Invalid column name 'False'.
+Invalid column name 'False'.
+Invalid column name 'False'.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = False , ISINDEXTOP = False, ISPAGEINDEXTOP = False, ISCATEGORYINDEXTOP = False where POSTID = 1578 </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:46:23 PM, IST - 7/2/2017 1:46:23 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Invalid column name 'True'.
+Invalid column name 'True'.
+Invalid column name 'True'.
+Invalid column name 'False'.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = True , ISINDEXTOP = True, ISPAGEINDEXTOP = True, ISCATEGORYINDEXTOP = False where POSTID = 1563 </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:47:14 PM, IST - 7/2/2017 1:47:14 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Invalid column name 'True'.
+Invalid column name 'True'.
+Invalid column name 'False'.
+Invalid column name 'False'.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = True , ISINDEXTOP = True, ISPAGEINDEXTOP = False, ISCATEGORYINDEXTOP = False where POSTID = 1587 </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:47:14 PM, IST - 7/2/2017 1:47:14 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Invalid column name 'False'.
+Invalid column name 'True'.
+Invalid column name 'False'.
+Invalid column name 'False'.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = False , ISINDEXTOP = True, ISPAGEINDEXTOP = False, ISCATEGORYINDEXTOP = False where POSTID = 1586 </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:47:15 PM, IST - 7/2/2017 1:47:15 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Invalid column name 'True'.
+Invalid column name 'True'.
+Invalid column name 'False'.
+Invalid column name 'False'.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = True , ISINDEXTOP = True, ISPAGEINDEXTOP = False, ISCATEGORYINDEXTOP = False where POSTID = 1585 </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:47:15 PM, IST - 7/2/2017 1:47:15 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Invalid column name 'True'.
+Invalid column name 'True'.
+Invalid column name 'False'.
+Invalid column name 'False'.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = True , ISINDEXTOP = True, ISPAGEINDEXTOP = False, ISCATEGORYINDEXTOP = False where POSTID = 1584 </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:47:15 PM, IST - 7/2/2017 1:47:15 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Invalid column name 'True'.
+Invalid column name 'True'.
+Invalid column name 'True'.
+Invalid column name 'True'.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = True , ISINDEXTOP = True, ISPAGEINDEXTOP = True, ISCATEGORYINDEXTOP = True where POSTID = 1583 </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:47:15 PM, IST - 7/2/2017 1:47:15 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Invalid column name 'False'.
+Invalid column name 'False'.
+Invalid column name 'False'.
+Invalid column name 'False'.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = False , ISINDEXTOP = False, ISPAGEINDEXTOP = False, ISCATEGORYINDEXTOP = False where POSTID = 1582 </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:47:15 PM, IST - 7/2/2017 1:47:15 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Invalid column name 'False'.
+Invalid column name 'False'.
+Invalid column name 'False'.
+Invalid column name 'False'.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = False , ISINDEXTOP = False, ISPAGEINDEXTOP = False, ISCATEGORYINDEXTOP = False where POSTID = 1581 </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:47:15 PM, IST - 7/2/2017 1:47:15 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Invalid column name 'False'.
+Invalid column name 'False'.
+Invalid column name 'False'.
+Invalid column name 'False'.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = False , ISINDEXTOP = False, ISPAGEINDEXTOP = False, ISCATEGORYINDEXTOP = False where POSTID = 1580 </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:47:15 PM, IST - 7/2/2017 1:47:15 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Invalid column name 'False'.
+Invalid column name 'False'.
+Invalid column name 'False'.
+Invalid column name 'False'.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = False , ISINDEXTOP = False, ISPAGEINDEXTOP = False, ISCATEGORYINDEXTOP = False where POSTID = 1579 </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:47:15 PM, IST - 7/2/2017 1:47:15 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Invalid column name 'False'.
+Invalid column name 'False'.
+Invalid column name 'False'.
+Invalid column name 'False'.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = False , ISINDEXTOP = False, ISPAGEINDEXTOP = False, ISCATEGORYINDEXTOP = False where POSTID = 1578 </StackTrace>
+  </ErrorLogInfo>
+  <ErrorLogInfo>
+    <DateTime>7/2/2017 1:47:15 PM, IST - 7/2/2017 1:47:15 PM</DateTime>
+    <Page>SQLAccess.cs</Page>
+    <IPAddress>::1</IPAddress>
+    <Error>Invalid column name 'True'.
+Invalid column name 'True'.
+Invalid column name 'True'.
+Invalid column name 'False'.</Error>
+    <StackTrace>   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean&amp; dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task&amp; task, Boolean asyncWrite, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task&amp; task, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at WebgapeClass.SQLAccess.ExecuteNonQuery(SqlCommand cmd) in D:\My Projects\Webgape\Webgape\WebgapeClass\SQLAccess.cs:line 69Query-usp_Common_Dataset-OrgQuery ,Parameter@Query -valuesUPDATE tb_post set ISPOPULAR = True , ISINDEXTOP = True, ISPAGEINDEXTOP = True, ISCATEGORYINDEXTOP = False where POSTID = 1563 </StackTrace>
+  </ErrorLogInfo>
+</Root>

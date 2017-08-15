@@ -1,0 +1,410 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="Webgape.Admin.Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+    <link href="assets/css/ace.min.css" rel="stylesheet" />
+    <link href="/Admin/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Admin/assets/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/style/images/favicon.ico" />
+    <link rel="stylesheet" href="/Admin/assets/css/font-awesome.min.css" />
+    <link href="/Admin/assets/css/font-awesome-ie7.min.css" rel="stylesheet"
+        type="text/css" />
+    <link href="/Admin/assets/css/ace-skins.min.css" rel="stylesheet"
+        type="text/css" />
+    <!--[if IE 7]>
+		  <link rel="stylesheet" href="/Admin/assets/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+    <!--page specific plugin styles-->
+    <!--fonts-->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
+    <link rel="stylesheet" href="/Admin/assets/css/style.min.css" />
+    <link rel="stylesheet" href="/Admin/assets/css/style-responsive.min.css" />
+    <!--[if lte IE 8]>
+		  <link rel="stylesheet" href="/Admin/assets/css/style-ie.min.css" />
+		<![endif]-->
+    <!--inline styles related to this page-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" style="margin-bottom: 0px;">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container-fluid">
+                    <a title="logo" href="/Admin/dashboard.aspx" class="brand">
+                        <img title="logo" style="height: 25px;width:110px;" alt="logo" src="/style/images/logo.png"></a>
+                    <ul class="nav style-nav pull-right" id="ulnavwid" runat="server">
+                        <li class="purple"><a  href="/Admin/Profile/NotificationList.aspx"><i class="icon-bell-alt icon-animated-bell"></i>
+                            <span class="badge badge-important">
+                                <asp:Label ID="lblnotcount" runat="server"></asp:Label>
+                            </span> </a>
+                        </li>
+                        <li class="green"><a  href="/Admin/Profile/MessageList.aspx"><i class="icon-envelope icon-animated-vertical"></i>
+                            <span class="badge badge-success">
+                                <asp:Label ID="lblmsgcount" runat="server"></asp:Label>
+                            </span> </a>
+                        </li>
+                        <li class="light-blue"><a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                            <span class="user-info"><small>Welcome,</small>
+                                <%=Session["AdminName"]%>
+                            </span><i class="icon-caret-down"></i></a>
+                            <ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-closer">
+                                <li><a title="Profile" href="/Admin/Profile/Profile.aspx" onclick="showprofile();"><i class="icon-user"></i>Profile </a></li>
+                                <li class="divider"></li>
+                                
+                                <li><a title="Website" href="/" target="_blank" ><i class="icon-globe"></i>Website </a></li>
+                                <li><a title="Logout" href="/login.aspx"><i class="icon-off"></i>Logout </a></li>
+                                    <li><a title="Help" href="javascript:void(0);"><i class="icon-question-sign"></i>Help</a></li>
+                            </ul>
+                            <p style="width: 100%; display: none">
+                                <asp:Literal ID="litDate" runat="server"></asp:Literal>
+                            </p>
+                        </li>
+                    </ul>
+                    <!--/.style-nav-->
+                </div>
+                <!--/.container-fluid-->
+            </div>
+            <!--/.navbar-inner-->
+        </div>
+        <!--/.navbar-inner-->
+        <div class="main-container container-fluid">
+            <a class="menu-toggler" id="menu-toggler" href="#"><span class="menu-text"></span>
+            </a>
+            <div class="sidebar" id="sidebar">
+                <ul class="nav nav-list">
+                    <li id="lidashboard" runat="server"><a href="/Admin/Dashboard.aspx"><i class="icon-dashboard"></i><span class="menu-text">Dashboard</span></a></li>
+                    <li id="liprofile" runat="server" visible="false"><a href="#" class="dropdown-toggle"><i class="icon-user"></i><span class="menu-text">Profile</span><b class="arrow icon-angle-down"></b></a>
+                        <ul class="submenu">
+                            <li id="ligeneral" runat="server"><a href="/Admin/Profile/Profile.aspx"><i class="icon-double-angle-right"></i>General</a></li>
+                            <li id="limessage" runat="server"><a href="/Admin/Profile/MessageList.aspx"><i class="icon-double-angle-right"></i>Message</a></li>
+                            <li id="linotification" runat="server"><a href="/Admin/Profile/NotificationList.aspx"><i class="icon-double-angle-right"></i>Notification</a></li>
+                            <li id="liearnings" runat="server"><a href="/Admin/Profile/Earning.aspx"><i class="icon-double-angle-right"></i>Earning</a></li>
+                            <li id="lipoints" runat="server"><a href="/Admin/Profile/Point.aspx"><i class="icon-double-angle-right"></i>Points</a></li>
+                        </ul>
+                    </li>
+
+                    <li id="lipost" runat="server" visible="false"><a href="#" class="dropdown-toggle"><i class="icon-pencil"></i><span class="menu-text">Post</span><b class="arrow icon-angle-down"></b></a>
+                        <ul class="submenu">
+                            <li id="lipostlist" runat="server"><a href="/Admin/Posts/Postlist.aspx"><i class="icon-double-angle-right"></i>Post List</a></li>
+                            <li id="liaddpost" runat="server"><a href="/Admin/Posts/Post.aspx"><i class="icon-double-angle-right"></i>Add Post</a></li>
+                            <li id="licomment" runat="server"><a href="/Admin/Posts/CommentList.aspx"><i class="icon-double-angle-right"></i>Comment</a></li>
+                            <li id="licatlist" runat="server"><a href="/Admin/Posts/Categorylist.aspx"><i class="icon-double-angle-right"></i>Category List</a></li>
+                            <li id="liaddcat" runat="server"><a href="/Admin/Posts/Category.aspx"><i class="icon-double-angle-right"></i>Add Category</a></li>
+                            <li id="ligooglexml" runat="server"><a href="/Admin/Posts/GenerateGoogleXML.aspx"><i class="icon-double-angle-right"></i>Generate XML</a></li>
+                        </ul>
+                    </li>
+                    <li id="liuser" runat="server" visible="false"><a href="#" class="dropdown-toggle"><i class="icon-user"></i><span class="menu-text">User</span> <b class="arrow icon-angle-down"></b></a>
+                        <ul class="submenu">
+                            <li id="liuserlist" runat="server"><a href="/Admin/Users/Userlist.aspx"><i class="icon-double-angle-right"></i>User List</a></li>
+                        </ul>
+                    </li>
+                    <li id="licontent" runat="server" visible="false"><a href="#" class="dropdown-toggle"><i class="icon-edit"></i><span class="menu-text">Content</span> <b class="arrow icon-angle-down"></b></a>
+                        <ul class="submenu">
+                            <li id="litopiclist" runat="server"><a href="/Admin/Content/Topiclist.aspx"><i class="icon-double-angle-right"></i>Topic List</a></li>
+                            <li id="liaddtopic" runat="server"><a href="/Admin/Content/Topic.aspx"><i class="icon-double-angle-right"></i>Add Topic</a></li>
+                            <li id="lisubscription" runat="server"><a href="/Admin/Content/SubscriptionList.aspx"><i class="icon-double-angle-right"></i>Subscription</a></li>                            
+                            <li id="litestimoniallist" runat="server"><a href="/Admin/Content/TestimonialList.aspx"><i class="icon-double-angle-right"></i>Testimonial List</a></li>
+                        </ul>
+                    </li>
+                    <li id="lisettings" runat="server" visible="false"><a href="#" class="dropdown-toggle"><i class="icon-wrench"></i><span class="menu-text">Settings</span> <b class="arrow icon-angle-down"></b></a>
+                        <ul class="submenu">
+                            <li id="liadminrights" runat="server"><a href="/Admin/Settings/Adminrights.aspx"><i class="icon-double-angle-right"></i>Admin Rights</a></li>
+                            <li id="lipagerights" runat="server"><a href="/Admin/Settings/PageRights.aspx"><i class="icon-double-angle-right"></i>Page Rights</a></li>
+                            <li id="limailconfig" runat="server"><a href="/Admin/Settings/Mailconfig.aspx"><i class="icon-double-angle-right"></i>Mail Configuration</a></li>
+                            <li id="liimageconfig" runat="server"><a href="/Admin/Settings/Imagesize.aspx"><i class="icon-double-angle-right"></i>Image Configuration</a></li>
+                            <li id="liprofilepageconfiguration" runat="server"><a href="/Admin/Settings/ProfilePageConfiguration.aspx"><i class="icon-double-angle-right"></i>Profile Configuration</a></li>
+                            <li id="lipostpageconfig" runat="server"><a href="/Admin/Settings/PostPageConfiguration.aspx"><i class="icon-double-angle-right"></i>Post Configuration</a></li>
+                            <li id="liapplicationconfiguration" runat="server"><a href="/Admin/Settings/Appconfiglist.aspx"><i class="icon-double-angle-right"></i>Application Configuration</a></li>
+                            <li id="liindexpageconfiguration" runat="server"><a href="/Admin/Settings/IndexPageConfig.aspx"><i class="icon-double-angle-right"></i>Index Page Configuration</a></li>
+                            <li id="liheaderlinks" runat="server"><a href="/Admin/Settings/HeaderLinkList.aspx"><i class="icon-double-angle-right"></i>Header Links</a></li>
+                            <li id="liemailtemplates" runat="server"><a href="/Admin/Settings/EmailTemplateList.aspx"><i class="icon-double-angle-right"></i>Email Templates</a></li>
+                            <li id="lidatabasebackup" runat="server"><a href="/Admin/Settings/Databackup.aspx"><i class="icon-double-angle-right"></i>Database Backup</a></li>
+                        </ul>
+                    </li>
+                    <li id="lireports" runat="server" visible="false"><a class="" href="/Admin/Reports/Reports.aspx"><i
+                        class="icon-list-alt"></i><span class="menu-text">Reports</span></a>
+                    </li>
+                  </ul>
+                <!--/.nav-list-->
+                <div class="sidebar-collapse" id="sidebar-collapse">
+                    <i class="icon-double-angle-left"></i>
+                </div>
+            </div>
+            <div class="main-content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <!--/.page-content-->
+                <!--/#style-settings-container-->
+            </div>
+            <!--/.main-content-->
+        </div>
+
+        <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-small btn-inverse to-top"><i
+            class="icon-double-angle-up icon-only bigger-110"></i></a>
+        <%--        <div id="SpaceDashboard" runat="server" visible="false">
+        </div>--%>
+        <div id="footer" style="display: none;">
+            <div id="footer-main">
+                <p>
+                    Copyright &copy;
+                <%=System.DateTime.Now.Year.ToString() %>,
+                <%=WebgapeClass.AppLogic.AppConfigs("STOREPATH")%>, All rights
+                reserved.
+                </p>
+            </div>
+        </div>
+
+        <div id="backgroundPopupprofile" style="z-index: 1000000;">
+        </div>
+    </form>
+    <!--/.main-container-->
+    <!--basic scripts-->
+    <!--[if !IE]>-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!--<![endif]-->
+    <!--[if IE]>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<![endif]-->
+    <!--[if !IE]>-->
+    <script type="text/javascript">
+        window.jQuery || document.write("<script src='/Admin/assets/js/jquery-2.0.3.min.js'>" + "<" + "/script>");
+    </script>
+    <!--<![endif]-->
+    <!--[if IE]>
+<script type="text/javascript">
+ window.jQuery || document.write("<script src='/Admin/assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+</script>
+<![endif]-->
+    <script type="text/javascript">
+        if ("ontouchend" in document) document.write("<script src='/Admin/assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+    </script>
+    <script src="/Admin/assets/js/bootstrap.min.js"></script>
+    <!--page specific plugin scripts-->
+    <!--[if lte IE 8]>
+		  <script src="/Admin/assets/js/excanvas.min.js"></script>
+		<![endif]-->
+    <script src="/Admin/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="/Admin/assets/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="/Admin/assets/js/jquery.slimscroll.min.js"></script>
+    <script src="/Admin/assets/js/jquery.easy-pie-chart.min.js"></script>
+    <script src="/Admin/assets/js/jquery.sparkline.min.js"></script>
+    <script src="/Admin/assets/js/flot/jquery.flot.min.js"></script>
+    <script src="/Admin/assets/js/flot/jquery.flot.pie.min.js"></script>
+    <script src="/Admin/assets/js/flot/jquery.flot.resize.min.js"></script>
+    <!--style scripts-->
+    <script src="/Admin/assets/js/admin-elements.min.js"></script>
+    <script src="/Admin/assets/js/admin.min.js"></script>
+    <script src="/Admin/assets/js/popup.js"></script>
+    <!--inline scripts related to this page-->
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+            var e = $("#btn-scroll-up"); e.fadeOut(150);
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 150) { e.fadeIn(150) } else { e.fadeOut(150) }
+                if ($(this).scrollTop() == $(document).height() - $(this).height()) {
+                    $('#divfloating').attr("class", "");
+                    $('#divfloating11').attr("class", "");
+                }
+                else {
+                    $('#divfloating').attr("class", "divfloatingcss");
+                    $('#divfloating11').attr("class", "divfloatingcss");
+                }
+            });
+            e.click(function () { $("html, body").animate({ scrollTop: 0 }, 300); return false })
+            $('#divfloating').attr("class", "divfloatingcss");
+            $('#divfloating11').attr("class", "divfloatingcss");
+        });
+    </script>
+    <script type="text/javascript">
+        function showprofile() { centerPopupprofile(); loadPopupprofile(); }
+        $(function () {
+            //$('.easy-pie-chart.percentage').each(function () {
+            //    var $box = $(this).closest('.infobox');
+            //    var barColor = $(this).data('color') || (!$box.hasClass('infobox-dark') ? $box.css('color') : 'rgba(255,255,255,0.95)');
+            //    var trackColor = barColor == 'rgba(255,255,255,0.95)' ? 'rgba(255,255,255,0.25)' : '#E2E2E2';
+            //    var size = parseInt($(this).data('size')) || 50;
+            //    $(this).easyPieChart({
+            //        barColor: barColor,
+            //        trackColor: trackColor,
+            //        scaleColor: false,
+            //        lineCap: 'butt',
+            //        lineWidth: parseInt(size / 10),
+            //        animate: /msie\s*(8|7|6)/.test(navigator.userAgent.toLowerCase()) ? false : 1000,
+            //        size: size
+            //    });
+            //})
+
+            //$('.sparkline').each(function () {
+            //    var $box = $(this).closest('.infobox');
+            //    var barColor = !$box.hasClass('infobox-dark') ? $box.css('color') : '#FFF';
+            //    $(this).sparkline('html', { tagValuesAttribute: 'data-values', type: 'bar', barColor: barColor, chartRangeMin: $(this).data('min') || 0 });
+            //});
+
+            //var placeholder = $('#piechart-placeholder').css({ 'width': '90%', 'min-height': '150px' });
+            //var data = [
+            //	{ label: "social networks", data: 38.7, color: "#68BC31" },
+            //	{ label: "search engines", data: 24.5, color: "#2091CF" },
+            //	{ label: "ad campaings", data: 8.2, color: "#AF4E96" },
+            //	{ label: "direct traffic", data: 18.6, color: "#DA5430" },
+            //	{ label: "other", data: 10, color: "#FEE074" }
+            //]
+
+            //function drawPieChart(placeholder, data, position) {
+            //    $.plot(placeholder, data, {
+            //        series: {
+            //            pie: {
+            //                show: true,
+            //                tilt: 0.8,
+            //                highlight: {
+            //                    opacity: 0.25
+            //                },
+            //                stroke: {
+            //                    color: '#fff',
+            //                    width: 2
+            //                },
+            //                startAngle: 2
+            //            }
+            //        },
+            //        legend: {
+            //            show: true,
+            //            position: position || "ne",
+            //            labelBoxBorderColor: null,
+            //            margin: [-30, 15]
+            //        }
+            //		,
+            //        grid: {
+            //            hoverable: true,
+            //            clickable: true
+            //        }
+            //    })
+            //}
+            //drawPieChart(placeholder, data);
+
+            /**
+            we saved the drawing function and the data to redraw with different position later when switching to RTL mode dynamically
+            so that's not needed actually.
+            */
+            //placeholder.data('chart', data);
+            //placeholder.data('draw', drawPieChart);
+
+            //var $tooltip = $("<div class='tooltip top in hide'><div class='tooltip-inner'></div></div>").appendTo('body');
+            //var previousPoint = null;
+
+            //placeholder.on('plothover', function (event, pos, item) {
+            //    if (item) {
+            //        if (previousPoint != item.seriesIndex) {
+            //            previousPoint = item.seriesIndex;
+            //            var tip = item.series['label'] + " : " + item.series['percent'] + '%';
+            //            $tooltip.show().children(0).text(tip);
+            //        }
+            //        $tooltip.css({ top: pos.pageY + 10, left: pos.pageX + 10 });
+            //    } else {
+            //        $tooltip.hide();
+            //        previousPoint = null;
+            //    }
+
+            //});
+
+            //var d1 = [];
+            //for (var i = 0; i < Math.PI * 2; i += 0.5) {
+            //    d1.push([i, Math.sin(i)]);
+            //}
+
+            //var d2 = [];
+            //for (var i = 0; i < Math.PI * 2; i += 0.5) {
+            //    d2.push([i, Math.cos(i)]);
+            //}
+
+            //var d3 = [];
+            //for (var i = 0; i < Math.PI * 2; i += 0.2) {
+            //    d3.push([i, Math.tan(i)]);
+            //}
+            //var sales_charts = $('#sales-charts').css({ 'width': '100%', 'height': '220px' });
+            //$.plot("#sales-charts", [
+            //		{ label: "Domains", data: d1 },
+            //		{ label: "Hosting", data: d2 },
+            //		{ label: "Services", data: d3 }
+            //], {
+            //    hoverable: true,
+            //    shadowSize: 0,
+            //    series: {
+            //        lines: { show: true },
+            //        points: { show: true }
+            //    },
+            //    xaxis: {
+            //        tickLength: 0
+            //    },
+            //    yaxis: {
+            //        ticks: 10,
+            //        min: -2,
+            //        max: 2,
+            //        tickDecimals: 3
+            //    },
+            //    grid: {
+            //        backgroundColor: { colors: ["#fff", "#fff"] },
+            //        borderWidth: 1,
+            //        borderColor: '#555'
+            //    }
+            //});
+
+
+            //$('#recent-box [data-rel="tooltip"]').tooltip({ placement: tooltip_placement });
+            //function tooltip_placement(context, source) {
+            //    var $source = $(source);
+            //    var $parent = $source.closest('.tab-content')
+            //    var off1 = $parent.offset();
+            //    var w1 = $parent.width();
+
+            //    var off2 = $source.offset();
+            //    var w2 = $source.width();
+
+            //    if (parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2)) return 'right';
+            //    return 'left';
+            //}
+
+
+            //$('.dialogs,.comments').slimScroll({
+            //    height: '300px'
+            //});
+
+
+            //Android's default browser somehow is confused when tapping on label which will lead to dragging the task
+            //so disable dragging when clicking on label
+            var agent = navigator.userAgent.toLowerCase();
+            if ("ontouchstart" in document && /applewebkit/.test(agent) && /android/.test(agent))
+                $('#tasks').on('touchstart', function (e) {
+                    var li = $(e.target).closest('#tasks li');
+                    if (li.length == 0) return;
+                    var label = li.find('label.inline').get(0);
+                    if (label == e.target || $.contains(label, e.target)) e.stopImmediatePropagation();
+                });
+
+            $('#tasks').sortable({
+                opacity: 0.8,
+                revert: true,
+                forceHelperSize: true,
+                placeholder: 'draggable-placeholder',
+                forcePlaceholderSize: true,
+                tolerance: 'pointer',
+                stop: function (event, ui) {//just for Chrome!!!! so that dropdowns on items don't appear below other items after being moved
+                    $(ui.item).css('z-index', 'auto');
+                }
+            }
+				);
+            $('#tasks').disableSelection();
+            $('#tasks input:checkbox').removeAttr('checked').on('click', function () {
+                if (this.checked) $(this).closest('li').addClass('selected');
+                else $(this).closest('li').removeClass('selected');
+            });
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.flex-control-nav {
+	bottom: 10px;
+}
+
+input {
+	line-height: 14px;
+}
+
+
+.frame:before {
+    z-index: 0;
+}

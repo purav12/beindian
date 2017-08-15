@@ -1,0 +1,103 @@
+.box {
+	background: #262626;
+}
+
+.post .details {
+	background: #212121;
+}
+
+input, 
+textarea {
+	background: #1d1d1d;
+}
+
+input:focus,
+textarea:focus {
+	background: #1d1d1d;
+}
+
+#navigation  {
+	background: #262626;
+}
+
+#navigation1  {
+	background: #262626;
+}
+
+.frame a .more {
+	background: #000 url(../images/icon-more.png) no-repeat center center;
+}
+
+#comments .message {
+	background: #1d1d1d;
+}
+
+.slides li .description {
+	background: #262626;
+}
+.gallery-wrapper {
+	background: #262626;
+}
+.main-image {
+	background: #262626;
+}
+.zetaEmpty div span {
+	background: #262626;
+}
+
+.zetaWarning {
+	background-color: #262626;
+}
+
+.header-wrapper,
+.footer-wrapper,
+#thumb-tray {
+	background: #262626 !important;
+}
+
+.site-generator-wrapper {
+	background: #1d1d1d;
+}
+
+.toggle h4.title {
+	background-color: #212121;
+}
+.toggle h4.title.active {
+	background-color: #1d1d1d;
+}
+.togglebox {
+	background-color: #212121;
+}
+
+ul.tabs li a {
+	background-color: #1d1d1d;
+}
+
+ul.tabs li a.current {
+	background-color: #212121;
+}
+
+.panes {
+	background-color: #212121;
+}
+
+div.dpSocialTimeline .dpSocialTimeline_item {
+	background: #262626 !important;
+}
+
+div.dpSocialTimeline .dpSocialTimeline_item div.dpSocialTimelineContentFoot,
+div.dpSocialTimeline .dpSocialTimeline_item div.dpSocialTimelineContentHead {
+	background: #1d1d1d !important;
+}
+
+.dpSocialTimeline_filter {
+	background: #262626 !important;
+}
+
+.dpSocialTimeline_filter button.active  {
+	background: #1d1d1d !important;
+}
+
+.mejs-container .mejs-controls {
+	background-color: #2d2d2d;
+}

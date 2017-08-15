@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /Rewriter.aspx
+Disallow: /ErrorLog.xml
+
+sitemap: http://BeIndian.In/sitemap.xml
